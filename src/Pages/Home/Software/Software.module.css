@@ -1,0 +1,58 @@
+.SoftwareContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.SoftCard{
+    margin:1vw;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.SoftCard img{
+    width:1.5vw;
+}
+
+.SoftCard ul{
+    list-style-type:none;
+}
+
+.SoftCard li{
+    margin-bottom: 1vh;
+    text-align: left;
+}
+
+.SoftCard h3{
+    text-align: center;
+    font-family: montserrat;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width:700px) {
+    .SoftwareContainer{
+        width:90%;
+        justify-content: space-evenly;
+    }
+
+    .SoftCard h3{
+        font-size: 0.8em;
+    }
+
+    .SoftCard img{
+        width:8vw;
+    }
+
+    .SoftCard li{
+        font-size: 0.5em;
+    }
+
+    .SoftCard{
+        width:40%;
+    }
+}

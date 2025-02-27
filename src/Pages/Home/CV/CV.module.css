@@ -1,0 +1,32 @@
+.CVBody{
+    padding: 8%;
+}
+
+.CVBody h2{
+	padding-top:2vw;	
+	font-weight:600;
+	font-size: 1.4em;
+}
+
+.CVBody h2{
+	font-size: 1.3em;
+	font-weight:700;
+	margin:0;
+	padding: 0;
+}
+
+.CVBody h3{
+	font-size:0.8em;
+	font-weight: 700;
+}
+
+.CVBody h4{
+	font-size:0.8em;
+	font-weight: 400;
+	margin:0;
+	color:#777;
+}
+
+.CVBody ul{
+	font-size: 0.8em;
+}

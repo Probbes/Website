@@ -1,0 +1,256 @@
+.PortfolioContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.PortfolioContainer img{
+    object-fit: cover;
+    margin: 0px;
+	width: 18vw;
+	height: 10vw;
+}
+
+.PortfolioItems{
+    margin: 0.1vw;
+}
+
+.buttonChoice{
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.buttonChoice button{
+    font-size: 0.9em;
+    font-family: karla;
+    font-style: normal;
+
+    height:100%;
+	border:none;
+	text-align:center;
+    padding: 1vw;
+    
+    cursor: pointer;
+}
+
+.activeButton {
+    background-color:hsl(16, 60%, 50%);
+    color: white;
+}
+
+.inactiveButton {
+    background-color:hsl(16, 40%, 80%);
+    color: white;
+}
+
+.inactiveButton:hover{
+    background-color:hsl(16, 60%, 75%);
+}
+
+/* Modal*/
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    margin-top: 5vh;
+
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modalContent {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60vw;
+    height: 65vh;
+
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleUp 0.2s ease-in-out 0.1s forwards;
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modalContent iframe, .modalContent img {
+    width: 100%;
+    height: 100%;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+
+.modalOverlay.closing {
+    animation: fadeOut 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+.modalContent.closing {
+    animation: scaleDown 0.2s ease-in-out forwards;
+}
+
+@keyframes scaleDown {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/*Text hover on images*/
+
+.PortfolioItems {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.hoverImage {
+    cursor: pointer;
+}
+
+.hoverText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    font-family: karla;
+    color : white;
+	text-shadow: 1px 1px 2px black;
+    text-align: center;
+    font-weight:900;
+
+    pointer-events: none; /* Allow clicks to go through */
+}
+
+.PortfolioItems:hover .hoverText{
+    opacity: 1;
+}
+
+.hoverText1{
+    font-size: 1em;
+}
+
+.hoverText2{
+    font-size: 0.8em;
+}
+
+/*DEMO*/
+
+.demo{
+    padding: 20px;
+	padding-bottom: 60px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.demo iframe{
+    margin:0vw;
+
+    width: 40vw;  
+    height: 22.5vw;
+	border: none; /* Remove iframe border */
+}
+
+.demo img{
+    margin-left: 35%;
+	margin-top:2vw;
+
+    width: 10vw;
+	height: 10vw;
+}
+
+.demoVideo{
+    height: 100%;
+    display: flex;
+    margin: 4vw;
+}
+
+.demoGithub{
+    margin: 4vw;
+}
+
+
+@media only screen and (max-width:700px) {
+    
+    .PortfolioContainer img{
+        width: 36vw;
+        height: 20vw;
+    }
+
+    .modalContent {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 80vw;
+        height: 30vh;
+    
+        opacity: 0;
+        transform: scale(0.8);
+        animation: scaleUp 0.2s ease-in-out 0.1s forwards;
+    }
+}

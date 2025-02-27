@@ -1,0 +1,138 @@
+.header {
+	background-color: #9D715C;
+	height: 14vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 1fr;
+	text-align: center;
+	font-size: 1.1vw;
+	align-items: center;
+	color: white;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+
+	transition: height 0.5s ease-in-out;
+}
+
+.headerName {
+	grid-column: 1;
+	font-size: 2em;
+	font-family: Karla;
+}
+
+.header button {
+	font-size: 1.5em;
+	font-family: Karla;
+	height: 100%;
+	border: none;
+	text-align: center;
+	color: white;
+	background-color: #9D715C;
+}
+
+.header button:hover {
+	background-color: #D2BBB2;
+	cursor: pointer;
+}
+
+.buttonHome {
+	grid-column: 3;
+}
+
+.buttonCV {
+	grid-column: 5;
+}
+
+.buttonPort {
+	grid-column: 4;
+}
+
+.buttonLang {
+	grid-column: 6;
+}
+
+.header img {
+	height: 2.2em;
+	animation: drapeau2 0.5s forwards; /* Default small */
+}
+
+/* === Animations === */
+
+.expand {
+	animation: header-size2  0.5s forwards;
+}
+
+.shrink {
+	animation: header-size1 0.5s forwards;
+}
+
+
+
+@keyframes header-size1 {
+	from {
+		height: 14vh;
+		opacity: 1;
+		font-size: 1em;
+	}
+	to {
+		height: 8vh;
+		opacity: 0.8;
+		font-size: 0.8em;
+	}
+}
+
+@keyframes header-size2 {
+	from {
+		height: 8vh;
+		opacity: 0.8;
+		font-size: 0.8em;
+	}
+	to {
+		height: 14vh;
+		opacity: 1;
+		font-size: 1em;
+	}
+}
+
+@keyframes drapeau1 {
+	from {
+		transform: scale(0.7);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes drapeau2 {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.7);
+	}
+}
+
+@media only screen and (max-width:700px) {
+	.headerName{
+		font-size: 1em;
+	}
+
+	.header button{
+		font-size: 0.8em;
+	}
+
+	.header{
+		display: flex;
+		justify-content: space-between;
+		width:100%;
+	}
+
+	.headerName {
+		grid-column: 1;
+		font-size: 0.9em;
+		font-family: Karla;
+		width: 20vw;
+	}
+}
