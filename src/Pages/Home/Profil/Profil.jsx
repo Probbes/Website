@@ -14,7 +14,7 @@ function Profil({isEnglish}){
 
             <p>J'ai obtenu un master en audiovisuel, médias interactifs numériques et jeux, parcours post-production.</p>
 
-            <p>Actuellement en recherche d'emploi : Développement C++ / Python, Développement d'environnement sur Unreal Engine, VFX, 3D.</p>
+            <p>Actuellement en recherche d'emploi : Technical Director, Développement C++ / Python, Développement d'environnement sur Unreal Engine, VFX, 3D.</p>
             </div>
         </div>
         </>

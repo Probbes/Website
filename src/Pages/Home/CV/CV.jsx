@@ -11,7 +11,7 @@ function CV({isEnglish}){
 					<h4>2024</h4>
 						<ul>
 						<li>Photogrammétrie de squelettes</li>
-						<li>Traitement des pièces photogrammétrisés et animations sur Blender</li>
+						<li>Traitement, rigging et animation de ces assets sur Blender</li>
 						<li>Création d'un environnement XR sur Unreal Engine</li>
 						<li>Managing et apprentissage de la 3D d'un petit groupe d'étudiants en stage</li>
 						<li>Participation aux conférences sur l'apprentissage virtuel</li>
@@ -31,7 +31,7 @@ function CV({isEnglish}){
 						<ul>
 						<li>Travail avec l'équipe de réalisation pour la diffusion d'un journal télévisé journalier</li>
 						<li> Création de diverses images d'illustration diffusées en direct</li>
-						<li>Mise en place avec l'équipe de production d'un concours d'éloquence en direct</li>
+						<li>Organisation, en collaboration avec l'équipe de production, d'un concours d'éloquence en direct</li>
 						<li>Prise d'initiative pour la création d'un programme d'automatisation d'un agenda journalier</li>
 						</ul>
 					<br />
@@ -54,7 +54,7 @@ function CV({isEnglish}){
 						<li>Création d'une scène en 3D photoréaliste</li>
 						<li>Recréation en 3D d'un lieu grâce au camera mapping</li>
 						<li>Incrustation d'un objet photogrammétrisé dans une vidéo</li>
-						<li>Création d'un environnement immersif en réalité virtuelle sur Unreal Engine</li>
+						<li>Développement d'un environnement immersif en réalité virtuelle sous Unreal Engine</li>
 						</ul>
 					<br />
 					<h3>Licence d'audiovisuel et multimédia</h3>
