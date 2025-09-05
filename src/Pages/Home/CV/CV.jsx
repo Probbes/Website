@@ -7,6 +7,14 @@ function CV({isEnglish}){
 			<div className={styles.CVBody}>
 			<h1>CV</h1>
 				<h2>Expériences professionnelles</h2>
+					<h3>Professeur particulier de mathématiques, Informatique, 3D et développement de jeux - Acadomia / Freelance</h3>
+					<h4>2025</h4>
+						<ul>
+						<li>Apprentissage mathématiques jusqu'au niveau terminale spécialité maths</li>
+						<li>Apprentissage par projets pour les cours numériques</li>
+						<li>Création d'animations grâce à Manim (Python) et Blender</li>
+						</ul>
+						<br/>
 					<h3>Stage - Photogrammétrie / Environnement XR</h3>
 					<h4>2024</h4>
 						<ul>
@@ -65,6 +73,13 @@ function CV({isEnglish}){
 						<li>Responsable du montage d'un court-métrage</li>
 						<li>Montage et effets spéciaux d'un court-métrage pour un concours étudiant</li>
 						</ul> 
+					<h3>Licence de mathématiques de de physique théorique</h3>
+					<h4>2015-2018</h4>
+					<h4>Université de Lille</h4>
+						<ul>
+						<li>Étude et compréhension mathématique et physique du monde</li>
+						<li>Utilisation de Python pour le traitement de données scientifiques</li>
+						</ul> 
 			</div>
         </>
 
@@ -73,6 +88,13 @@ function CV({isEnglish}){
 			<div className={styles.CVBody}>
 			<h1>CV</h1>
 				<h2>Work Experience</h2>
+					<h3>Tutor - Maths / Computer science / 3D / Games Dev</h3>
+					<h4>2025</h4>
+						<ul>
+						<li>Multidisciplinary teaching to dozens of students by creating tailor made projects</li>
+						<li>Creation of 2D and 3D animations to help the learning experience</li>
+						</ul>
+						<br/>
 					<h3>Internship - Photogrammetry / XR Environnement </h3>
 					<h4>2024</h4>
 						<ul>
@@ -130,6 +152,13 @@ function CV({isEnglish}){
 						<li>Team creation of an exhibition in augmented reality</li>
 						<li>Editing of several short films</li>
 						<li>Editing and making of special effects for a short film made for a contest</li>
+						</ul> 
+					<h3>Bachelor's degree in mathématics and physics</h3>
+					<h4>2015-2018</h4>
+					<h4>University of Lille</h4>
+						<ul>
+						<li>Mathematical and physical analysis of real-world phenomena</li>
+						<li>Used Python for scientific data processing</li>
 						</ul> 
 			</div>
         </>
