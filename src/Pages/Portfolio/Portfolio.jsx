@@ -34,7 +34,7 @@ export function Portfolio() {
         <Box sx={{width:{xs:"90%", sm:"60vw"}, bgcolor:"primary.main", border:5, borderColor:"secondary.main", borderRadius:5}}>
           <Box sx={{display:"flex", justifyContent:"space-evenly", alignItems:"center", marginBottom:"8vw", marginTop:"4vw", flexDirection:{xs:"column", sm:"row"}, gap:{xs:"10vw", sm:"2vw"}}}>
               <iframe style={{width:"70%", height:"auto", aspectRatio:"16/9", border:0}} allowFullScreen src="https://www.youtube.com/embed/Mvz_RclYmYw"></iframe>
-              <a style={{width:"20%"}} href="https://github.com/Probbes"><img style={{width:"100%"}} src={"src/assets/github.png"} /></a>
+              <a style={{width:"20%"}} href="https://github.com/Probbes"><img style={{width:"100%"}} src={"/src/assets/github.png"} /></a>
           </Box>
 
           <PortfolioGrid isEnglish={isEnglish}/>
