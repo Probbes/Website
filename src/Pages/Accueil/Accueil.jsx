@@ -1,13 +1,12 @@
 import { Box, Container, Grid } from "@mui/material";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useContext, useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
 import { LangContext } from "../../LangContext";
 
 import { WordAnimation } from "./WordAnimation";
 import CustomCard from "./CustomCard";
-import {Cube} from './Objects'
+// import {Cube} from './Objects'
 import videoweb from "/VideoWeb.mp4"
 import imgEI from "/src/assets/portfolio/VRBA.png"
 import img3D from "/src/assets/gorilla.png"
@@ -22,19 +21,19 @@ export function Accueil() {
   const {isEnglish} = useContext(LangContext)
 
   /* 3D */
-  function RotatingAntoine() {
-    const ref = useRef();
+  // function RotatingAntoine() {
+  //   const ref = useRef();
 
-    useFrame(() => {
-      ref.current.rotation.y += 0.02;
-    });
+  //   useFrame(() => {
+  //     ref.current.rotation.y += 0.02;
+  //   });
 
-    return (
-      <mesh ref={ref} position={[0,-2,0]} rotation={[0, -3.14/2, 0]} scale={[0.8,0.8,0.8]}>
-        <Cube/>
-      </mesh>
-    );
-  }
+  //   return (
+  //     <mesh ref={ref} position={[0,-2,0]} rotation={[0, -3.14/2, 0]} scale={[0.8,0.8,0.8]}>
+  //       <Cube/>
+  //     </mesh>
+  //   );
+  // }
 
   return(
     <Box sx={{bgcolor:"background.default", color:"text.primary", backgroundImage: `url(${BG})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", minHeight: "100vh"}} >
