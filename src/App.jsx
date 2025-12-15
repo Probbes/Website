@@ -1,20 +1,53 @@
-import { HashRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Home } from "./Pages/Home/Home"
-import { Project1 } from "./Pages/ProjectThreeJs/Project1"
-import Lang from "./Pages/WorldLang/Lang"
+import { Accueil } from "./Pages/Accueil/Accueil";
+import { createTheme, ThemeProvider } from "@mui/material";
+import { StrictMode, useState } from "react";
+import {Portfolio} from "./Pages/Portfolio/Portfolio";
+import { Contact } from "./Pages/Contact";
+import { Particles } from "./Pages/Particles";
+
+import {LangContext} from "./LangContext"
+
+const theme = createTheme({
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#0B3954',
+    },
+    secondary: {
+      main: '#4DA1A9',
+    },
+    background: {
+      default: '#000000',
+    },
+    text: {
+      primary: '#ffffff'
+    },
+  },
+  typography: {
+    fontFamily: 'Bahnschrift',
+  },
+});
 
 function App() {
 
-  return(
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/Project1" element={<Project1/>} />
-        <Route path="/Lang" element={<Lang/>} />
-      </Routes>
-    </HashRouter>
-  )  
+  const [isEnglish, setIsEnglish] = useState(false)
+
+  return (
+    <LangContext.Provider value={{isEnglish, setIsEnglish}}>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter >
+          <Routes primary={false}>
+            <Route path="/" element={<Accueil />} />
+            <Route path="/Portfolio" element={<Portfolio />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Particles" element={<Particles />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
+    </LangContext.Provider>
+  );
 }
 
-export default App
+export default App;
