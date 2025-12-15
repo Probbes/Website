@@ -59,17 +59,17 @@ export function Accueil() {
           </Button> */}
         </Box>
 
-        <Grid container rowSpacing={1} columnSpacing={5} sx={{justifyContent: "space-evenly", alignItems: "center"}}>
-          <Grid size={{xs: 12, sm: 5}} sx={{margin:"1vw"}}>
+        <Grid container  sx={{justifyContent: "space-evenly", alignItems: "center"}}>
+          <Grid sx={{margin:"1vw"}}>
             <CustomCard name="3D" img={img3D}/>
           </Grid>
-          <Grid size={{xs: 12, sm: 5}} sx={{margin:"1vw"}}>
+          <Grid sx={{margin:"1vw"}}>
             <CustomCard name={isEnglish ? "Immersive Environnements" : "Environnements Immersifs"}  img={imgEI}/>
           </Grid>
-          <Grid size={{xs: 12, sm: 5}} sx={{margin:"1vw"}}>
+          <Grid sx={{margin:"1vw"}}>
             <CustomCard name={isEnglish ? "Photogrammetry" : "Photogrammétrie"} img={imgPG}/>
           </Grid>
-          <Grid size={{xs: 12, sm: 5}} sx={{margin:"1vw"}}>
+          <Grid sx={{margin:"1vw"}}>
             <CustomCard name="Web" img={imgWD}/>
           </Grid>
         </Grid>

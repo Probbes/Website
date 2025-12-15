@@ -13,9 +13,13 @@ export function Contact() {
             <Box sx={{height:"60vh", width:"60vw", bgcolor:"primary.main", margin:"10vh", padding:"1vh", display:"flex", flexDirection:"column", alignItems:"center", textAlign:"center", justifyContent:"center", gap:10,
               border:5, borderColor:"secondary.main", borderRadius:10
             }}>
-                <div>E-mail : <a href="megevand.antoine@gmail.com" style={{color:"#4DA1A9"}}>megevand.antoine@gmail.com</a></div>
-                <div>Linkedin : <a href="www.linkedin.com/in/antoine-megevand-204261244" style={{color:"#4DA1A9"}}>www.linkedin.com/in/antoine-megevand-204261244</a></div>
-                <div>Malt : <a style={{color:"#4DA1A9"}}>link.com</a></div>
+                <div>E-mail : 
+                  {/* <a href="megevand.antoine@gmail.com" style={{color:"#4DA1A9"}}> */}
+                     <> megevand.antoine@gmail.com</>
+                    {/* </a> */}
+                </div>
+                <div>Linkedin : <a href="https://www.linkedin.com/in/antoine-megevand-204261244" style={{color:"#4DA1A9"}}>www.linkedin.com/in/antoine-megevand-204261244</a></div>
+                {/* <div>Malt : <a style={{color:"#4DA1A9"}}>link.com</a></div> */}
             </Box>
         </Box>
     </Box>
