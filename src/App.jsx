@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route, HashRouter } from "react-router-dom";
 
 import { Accueil } from "./Pages/Accueil/Accueil";
 import { createTheme, ThemeProvider } from "@mui/material";
@@ -37,14 +37,14 @@ function App() {
   return (
     <LangContext.Provider value={{isEnglish, setIsEnglish}}>
       <ThemeProvider theme={theme}>
-        <BrowserRouter >
+        <HashRouter >
           <Routes primary={false}>
             <Route path="/" element={<Accueil />} />
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Particles" element={<Particles />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </ThemeProvider>
     </LangContext.Provider>
   );
