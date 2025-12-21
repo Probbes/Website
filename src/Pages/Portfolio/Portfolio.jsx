@@ -27,7 +27,7 @@ export function Portfolio() {
             :
             <>
             <p>Développement d'environnements immersifs, développement web, création d'images et d'animations 3D, VFX pour live-action, composition musicale, montage vidéo...  </p>
-            <p>Je touche à tout, ma polyvalence me permet de réaliser une large gamme de projets audiovisuels de haute qualité.</p>
+            <p>Ma polyvalence me permet de réaliser une large gamme de projets audiovisuels de haute qualité.</p>
             </>
           }
            </Box>
