@@ -30,11 +30,7 @@ export function PortfolioGrid({}){
     {img:images["echoweb"],VFX:false,CS:true,isVideo:false,link:images["echoweb"],name:isEnglish?"Website":"Site Internet",tools:"Javascript - Firebase"},
     {img:images["generique"],VFX:true,CS:false,isVideo:true,link:"https://www.youtube.com/embed/us3TAqTIHTQ",name:isEnglish?"3D Opening":"Générique 3D",tools:"Blender - After Effects"},
     {img:images["T2"],VFX:false,CS:true,isVideo:true,link:"https://www.youtube.com/embed/ZXlseIvIKRw",name:isEnglish?"AR App":"Application AR",tools:"Java"},
-    {img:images["houdini"],VFX:true,CS:false,isVideo:true,link:"https://www.youtube.com/embed/xvSWXIi5dlk",name:isEnglish?"Water Simulation":"Simulation d'eau",tools:"Houdini"},
     {img:images["hyper"],VFX:true,CS:false,isVideo:false,link:images["hyper"],name:isEnglish?"3D Render":"Rendu 3D",tools:"Maya"},
-    {img:images["voeu"],VFX:true,CS:false,isVideo:true,link:"https://www.youtube.com/embed/t-hHf6Wsw4Q",name:isEnglish?"3D Animation":"Animation 3D",tools:"Maya"},
-    {img:images["mocap"],VFX:true,CS:false,isVideo:true,link:"https://www.youtube.com/embed/PpDBDq4i-7I",name:"Motion Capture",tools:"Blender"},
-    {img:images["morrowind"],VFX:true,CS:false,isVideo:true,link:"https://www.youtube.com/embed/2JLRMKNixOQ",name:isEnglish?"3D Animation":"Animation 3D",tools:"Blender"}
     ];
 
     const [activeIndex, setActiveIndex] = useState(null);

@@ -8,10 +8,6 @@ import { WordAnimation } from "./WordAnimation";
 import CustomCard from "./CustomCard";
 // import {Cube} from './Objects'
 import videoweb from "/VideoWeb.mp4"
-import imgEI from "/src/assets/portfolio/VRBA.png"
-import img3D from "/src/assets/gorilla.png"
-import imgPG from "/src/assets/photogram.png"
-import imgWD from "/src/assets/webdev.png"
 import BG from "/src/assets/BG.png"
 
 import {Header} from "/src/Pages/Header.jsx"
@@ -43,45 +39,12 @@ export function Accueil() {
         <Box sx={{flex:1, position:"relative"}}> 
           <video autoPlay loop muted style={{width:"100%", height:"100%", objectFit:"cover", position:"absolute"}}> <source src={videoweb} type="video/mp4" /></video>
             <Box sx={{position:"absolute", zIndex:"1", inset:"0", display:"flex", alignItems:"center", justifyContent:"center", flexDirection: "column", pointerEvents: "none",
-              textAlign:"center", fontSize:"1em", textShadow:"1px 1px 4px black", fontFamily:"fontFamily" }}>
+              textAlign:"center", fontSize:{xs:"0.6em", sm:"1.5em"}, textShadow:"1px 1px 4px black", fontFamily:"fontFamily" }}>
               <WordAnimation/> {/* Separate component to not re-render three-js scenes */}
             </Box>
         </Box>
         <Header />
       </Box>
-
-      {/* Body */}
-      <Container maxWidth="xl" style={{paddingLeft:"0px", paddingRight:"0px", zIndex:"2"}}>
-      <Box sx={{paddingTop:"2vh"}}>
-        <Box display="flex" justifyContent="center">
-        {/* <Button variant="contained" sx={{backgroundColor:"secondary.main", "&:hover": {backgroundColor: "#D7E8BA"}, width:"10vw", padding:"1em", margin:"2vw", fontSize:"1.2rem", fontWeight:"bold"}}>
-            3D
-          </Button> */}
-        </Box>
-
-        <Grid container  sx={{justifyContent: "space-evenly", alignItems: "center"}}>
-          <Grid sx={{margin:"1vw"}}>
-            <CustomCard name="3D" img={img3D}/>
-          </Grid>
-          <Grid sx={{margin:"1vw"}}>
-            <CustomCard name={isEnglish ? "Immersive Environnements" : "Environnements Immersifs"}  img={imgEI}/>
-          </Grid>
-          <Grid sx={{margin:"1vw"}}>
-            <CustomCard name={isEnglish ? "Photogrammetry" : "Photogrammétrie"} img={imgPG}/>
-          </Grid>
-          <Grid sx={{margin:"1vw"}}>
-            <CustomCard name="Web" img={imgWD}/>
-          </Grid>
-        </Grid>
-      </Box>
-      {/* <Box sx={{height:'500px', width:'500px'}}>
-        <Canvas fallback={<div>Sorry no WebGL supported!</div>} >
-          <ambientLight intensity={1} />
-          <directionalLight color="white" position={[0,0,5]} intensity={1}/>
-          <RotatingAntoine />
-        </Canvas>
-      </Box> */}
-    </Container>
     </Box>
   );
 }
