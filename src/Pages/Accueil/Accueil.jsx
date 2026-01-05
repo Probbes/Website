@@ -1,14 +1,12 @@
 import { Box, Container, Grid } from "@mui/material";
-import { Canvas, useFrame } from "@react-three/fiber";
+// import { Canvas, useFrame } from "@react-three/fiber";
 import { useContext, useEffect, useRef, useState } from "react";
 
 import { LangContext } from "../../LangContext";
 
 import { WordAnimation } from "./WordAnimation";
-import CustomCard from "./CustomCard";
 // import {Cube} from './Objects'
 import videoweb from "/VideoWeb.mp4"
-import BG from "/src/assets/BG.png"
 
 import {Header} from "/src/Pages/Header.jsx"
 
@@ -32,7 +30,7 @@ export function Accueil() {
   // }
 
   return(
-    <Box sx={{bgcolor:"background.default", color:"text.primary", backgroundImage: `url(${BG})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", minHeight: "100vh"}} >
+    <Box sx={{bgcolor:"background.default", color:"text.primary", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", minHeight: "100vh"}} >
 
       {/* Header */}
       <Box sx={{minHeight:"100vh", display:"flex", flexDirection:"column"}}>

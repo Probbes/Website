@@ -19,7 +19,7 @@ export function Contact() {
                     {/* </a> */}
                 </div>
                 <div>Linkedin : <a href="https://www.linkedin.com/in/antoine-megevand-204261244" style={{color:"#4DA1A9"}}>www.linkedin.com/in/antoine-megevand-204261244</a></div>
-                {/* <div>Malt : <a style={{color:"#4DA1A9"}}>link.com</a></div> */}
+                <div>Malt : <a href="https://www.malt.fr/profile/antoinemegevand?overview" style={{color:"#4DA1A9"}}>www.malt.fr/profile/antoinemegevand?overview</a></div>
             </Box>
         </Box>
     </Box>

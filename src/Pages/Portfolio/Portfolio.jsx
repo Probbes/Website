@@ -16,7 +16,7 @@ export function Portfolio() {
     <Box sx={{bgcolor:"background.default", color:"text.primary", backgroundImage: `url(${BG})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", minHeight: "100vh"}} >  
       <Header />
       <Box sx={{display:"flex", flexDirection:"column", alignItems:"center", marginTop:"2vh"}}>
-        <Box sx={{width:{xs:"90%", sm:"60vw"}, bgcolor:"primary.main", padding:"10px", display:"flex", justifyContent:"center", alignItems:"center", flexWrap:"wrap", marginBottom:"3vh", border:5, borderColor:"secondary.main", borderRadius:5, }} >
+        <Box sx={{width:{xs:"90%", sm:"50vw"}, bgcolor:"primary.main", padding:"10px", display:"flex", justifyContent:"center", alignItems:"center", flexWrap:"wrap", marginBottom:"3vh", border:5, borderColor:"secondary.main", borderRadius:5, }} >
            <img src={imageProfil} alt="cercle" style={{height:"35vh"}}/>
            <Box sx={{width:{xs:"80%", sm:"40%"}, paddingLeft:"6vw", fontFamily:"fontFamily", fontSize:{xs:"1.2em", sm:"1.5em"}}}>
             {isEnglish ? 
