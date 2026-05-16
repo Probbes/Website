@@ -1,13 +1,14 @@
-import {Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 import { Accueil } from "./Pages/Accueil/Accueil";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { StrictMode, useState } from "react";
-import {Portfolio} from "./Pages/Portfolio/Portfolio";
+import { Portfolio } from "./Pages/Portfolio/Portfolio";
 import { Contact } from "./Pages/Contact";
 import { Particles } from "./Pages/Particles";
+import { ARApp } from "./AR/ARApp";
 
-import {LangContext} from "./LangContext"
+import { LangContext } from "./LangContext"
 
 const theme = createTheme({
   palette: {
@@ -35,7 +36,7 @@ function App() {
   const [isEnglish, setIsEnglish] = useState(false)
 
   return (
-    <LangContext.Provider value={{isEnglish, setIsEnglish}}>
+    <LangContext.Provider value={{ isEnglish, setIsEnglish }}>
       <ThemeProvider theme={theme}>
         <HashRouter >
           <Routes primary={false}>
@@ -43,6 +44,7 @@ function App() {
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Particles" element={<Particles />} />
+            <Route path="/ARApp" element={<ARApp />} />
           </Routes>
         </HashRouter>
       </ThemeProvider>
